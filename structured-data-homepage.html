@@ -1,0 +1,86 @@
+<!-- ============================================================
+     LOCAL SEO STRUCTURED DATA  (JSON-LD)
+     Paste this ENTIRE block just before the closing </head> tag
+     on your HOMEPAGE. It tells Google you are a real local
+     business with a phone number, service area and ratings -
+     which is what powers the local "Map Pack" and rich results.
+
+     For each AREA page (e.g. /epc-cambridge) you can paste the
+     same block but change "areaServed" name + the page is already
+     about that town, so this mainly needs to live on the homepage.
+     ============================================================ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://checkepcrating.uk/#business",
+  "name": "EPC Bedford UK — CheckEPCRating.uk",
+  "legalName": "Zoha Property Services Ltd",
+  "url": "https://checkepcrating.uk/",
+  "image": "https://checkepcrating.uk/epc-bedford-retrofit-property-services.webp",
+  "logo": "https://checkepcrating.uk/epc-bedford-retrofit-property-services.webp",
+  "telephone": "+447345295687",
+  "priceRange": "££",
+  "description": "Accredited Energy Performance Certificates (EPC) from £69, PAT testing and fire door inspections across Bedford, Milton Keynes, Luton, Cambridge, Hertfordshire and Buckinghamshire. Certificates in 24–48 hours.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bedford",
+    "addressRegion": "Bedfordshire",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 52.1356,
+    "longitude": -0.4663
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Bedford" },
+    { "@type": "City", "name": "Milton Keynes" },
+    { "@type": "City", "name": "Luton" },
+    { "@type": "City", "name": "Cambridge" },
+    { "@type": "AdministrativeArea", "name": "Cambridgeshire" },
+    { "@type": "AdministrativeArea", "name": "Buckinghamshire" },
+    { "@type": "AdministrativeArea", "name": "Hertfordshire" },
+    { "@type": "City", "name": "Aylesbury" },
+    { "@type": "City", "name": "St Albans" },
+    { "@type": "City", "name": "Stevenage" }
+  ],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }],
+  "sameAs": [
+    "https://www.instagram.com/epcnearmebedford/",
+    "https://www.linkedin.com/in/naseem-epcnearme/",
+    "https://www.youtube.com/@EPCNEARME",
+    "https://www.zohapropertyservices.co.uk/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Property Compliance Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Domestic & Commercial EPC" },
+        "priceCurrency": "GBP",
+        "price": "69"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "PAT Testing" },
+        "priceCurrency": "GBP",
+        "price": "1.50"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Fire Door Inspection" },
+        "priceCurrency": "GBP",
+        "price": "35"
+      }
+    ]
+  }
+}
+</script>

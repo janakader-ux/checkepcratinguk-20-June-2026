@@ -1,0 +1,11 @@
+# robots.txt for https://checkepcrating.uk
+# Allow all search engines to crawl everything, and tell them
+# where the sitemap lives so new/clean URLs are discovered fast.
+
+User-agent: *
+Allow: /
+
+# (Optional) block nothing important. If you ever add admin or
+# thank-you pages you don't want indexed, add Disallow lines here.
+
+Sitemap: https://checkepcrating.uk/sitemap.xml
