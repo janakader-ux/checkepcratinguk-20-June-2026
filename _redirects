@@ -1,75 +1,87 @@
 # ============================================================
-#  checkepcrating.uk  —  Netlify _redirects
-#  Purpose: send every dead legacy ".html" URL (which Google
-#  has indexed and is now returning 404) to its live clean URL.
-#  This is THE fix for "Indexing request rejected / 404".
-#  Rules are read top-to-bottom; first match wins.
-#  301 = permanent (passes ranking signal to the new URL).
+#  checkepcrating.uk — Netlify _redirects  (definitive)
+#  Goal: ONE clean canonical URL per page.
+#   - clean URL (/epc-bedford) serves the page content
+#   - legacy .html URL (/epc-bedford.html) 301-redirects to clean
+#   - the old "epc-check-*" URLs Google indexed -> correct clean page
+#  Rules are read top-to-bottom; first match wins. 301! is forced.
 # ============================================================
 
-# ---- 1. Anomalous "epc-check-*" legacy pattern -------------
-# These slugs differ from the clean slug, so they need an
-# explicit target (stripping .html alone would still 404).
-/epc-check-bedford.html         /epc-bedford            301!
-/epc-check-cambridge.html       /epc-cambridge          301!
-/epc-check-milton-keynes.html   /epc-milton-keynes      301!
-/epc-check-luton.html           /epc-luton              301!
-/epc-check-cambridgeshire.html  /epc-cambridgeshire     301!
-/epc-check-buckinghamshire.html /epc-buckinghamshire    301!
-/epc-check-aylesbury.html       /epc-aylesbury          301!
-/epc-check-hertfordshire.html   /epc-hertfordshire      301!
-/epc-check-st-albans.html       /epc-st-albans          301!
-/epc-check-stevenage.html       /epc-stevenage          301!
-/epc-check-bedford              /epc-bedford            301!
-/epc-check-cambridge            /epc-cambridge          301!
+# ---- A. Domain canonicalisation (keep) ---------------------
+https://checkepcrating.co.uk/*     https://checkepcrating.uk/:splat   301!
+https://www.checkepcrating.co.uk/* https://checkepcrating.uk/:splat   301!
+http://checkepcrating.uk/*         https://checkepcrating.uk/:splat   301!
+http://www.checkepcrating.uk/*     https://checkepcrating.uk/:splat   301!
+https://www.checkepcrating.uk/*    https://checkepcrating.uk/:splat   301!
 
-# ---- 2. EPC area pages (.html -> clean) --------------------
-/epc-bedford.html               /epc-bedford            301!
-/epc-milton-keynes.html         /epc-milton-keynes      301!
-/epc-luton.html                 /epc-luton              301!
-/epc-cambridge.html             /epc-cambridge          301!
-/epc-cambridgeshire.html        /epc-cambridgeshire     301!
-/epc-buckinghamshire.html       /epc-buckinghamshire    301!
-/epc-aylesbury.html             /epc-aylesbury          301!
-/epc-hertfordshire.html         /epc-hertfordshire      301!
-/epc-st-albans.html             /epc-st-albans          301!
-/epc-stevenage.html             /epc-stevenage          301!
+# ---- B. Anomalous "epc-check-*" legacy URLs (Google-indexed) 
+#      These map to a DIFFERENT clean slug, so list them explicitly
+#      and place them ABOVE the generic .html catch-all below.
+/epc-check-bedford.html           /epc-bedford                301!
+/epc-check-bedford                /epc-bedford                301!
+/epc-check-milton-keynes.html     /epc-milton-keynes          301!
+/epc-check-milton-keynes          /epc-milton-keynes          301!
+/epc-check-luton.html             /epc-luton                  301!
+/epc-check-luton                  /epc-luton                  301!
+/epc-check-cambridge.html         /epc-cambridge              301!
+/epc-check-cambridge              /epc-cambridge              301!
+/epc-check-cambridgeshire.html    /epc-cambridgeshire         301!
+/epc-check-cambridgeshire         /epc-cambridgeshire         301!
+/epc-check-buckinghamshire.html   /epc-buckinghamshire        301!
+/epc-check-buckinghamshire        /epc-buckinghamshire        301!
+/epc-check-aylesbury.html         /epc-aylesbury              301!
+/epc-check-aylesbury              /epc-aylesbury              301!
+/epc-check-hertfordshire.html     /epc-hertfordshire          301!
+/epc-check-hertfordshire          /epc-hertfordshire          301!
+/epc-check-st-albans.html         /epc-st-albans              301!
+/epc-check-st-albans              /epc-st-albans              301!
+/epc-check-stevenage.html         /epc-stevenage              301!
+/epc-check-stevenage              /epc-stevenage              301!
 
-# ---- 3. PAT testing pages ----------------------------------
-/pat-testing-milton-keynes.html    /pat-testing-milton-keynes    301!
-/pat-testing-luton.html            /pat-testing-luton            301!
-/pat-testing-cambridge.html        /pat-testing-cambridge        301!
-/pat-testing-hertfordshire.html    /pat-testing-hertfordshire    301!
-/pat-testing-st-albans.html        /pat-testing-st-albans        301!
-/pat-testing-stevenage.html        /pat-testing-stevenage        301!
-/pat-testing-cambridgeshire.html   /pat-testing-cambridgeshire   301!
-/pat-testing-buckinghamshire.html  /pat-testing-buckinghamshire  301!
-/pat-testing-aylesbury.html        /pat-testing-aylesbury        301!
+# ---- C. Homepage variant ----------------------------------
+/index.html                         /                                         301!
 
-# ---- 4. Fire door inspection pages -------------------------
-/fire-door-inspection-milton-keynes.html    /fire-door-inspection-milton-keynes    301!
-/fire-door-inspection-luton.html            /fire-door-inspection-luton            301!
-/fire-door-inspection-cambridge.html        /fire-door-inspection-cambridge        301!
-/fire-door-inspection-hertfordshire.html    /fire-door-inspection-hertfordshire    301!
-/fire-door-inspection-st-albans.html        /fire-door-inspection-st-albans        301!
-/fire-door-inspection-stevenage.html        /fire-door-inspection-stevenage        301!
-/fire-door-inspection-cambridgeshire.html   /fire-door-inspection-cambridgeshire   301!
-/fire-door-inspection-buckinghamshire.html  /fire-door-inspection-buckinghamshire  301!
-/fire-door-inspection-aylesbury.html        /fire-door-inspection-aylesbury        301!
+# ---- D. Clean URLs SERVE the .html page (rewrite, no redirect)
+/commercial-epc-bedford             /commercial-epc-bedford.html            200
+/commercial-epc-milton-keynes       /commercial-epc-milton-keynes.html      200
+/epc-aylesbury                      /epc-aylesbury.html                     200
+/epc-bedford                        /epc-bedford.html                       200
+/epc-buckinghamshire                /epc-buckinghamshire.html               200
+/epc-cambridge                      /epc-cambridge.html                     200
+/epc-cambridgeshire                 /epc-cambridgeshire.html                200
+/epc-compliance-bundle              /epc-compliance-bundle.html             200
+/epc-hertfordshire                  /epc-hertfordshire.html                 200
+/epc-luton                          /epc-luton.html                         200
+/epc-milton-keynes                  /epc-milton-keynes.html                 200
+/epc-st-albans                      /epc-st-albans.html                     200
+/epc-stevenage                      /epc-stevenage.html                     200
+/fire-door-inspection-aylesbury     /fire-door-inspection-aylesbury.html    200
+/fire-door-inspection-bedford       /fire-door-inspection-bedford.html      200
+/fire-door-inspection-buckinghamshire /fire-door-inspection-buckinghamshire.html 200
+/fire-door-inspection-cambridge     /fire-door-inspection-cambridge.html    200
+/fire-door-inspection-cambridgeshire /fire-door-inspection-cambridgeshire.html 200
+/fire-door-inspection-hertfordshire /fire-door-inspection-hertfordshire.html 200
+/fire-door-inspection-luton         /fire-door-inspection-luton.html        200
+/fire-door-inspection-milton-keynes /fire-door-inspection-milton-keynes.html 200
+/fire-door-inspection-st-albans     /fire-door-inspection-st-albans.html    200
+/fire-door-inspection-stevenage     /fire-door-inspection-stevenage.html    200
+/for-estate-agents                  /for-estate-agents.html                 200
+/hmo-compliance-bedford             /hmo-compliance-bedford.html            200
+/pat-testing-aylesbury              /pat-testing-aylesbury.html             200
+/pat-testing-bedford                /pat-testing-bedford.html               200
+/pat-testing-buckinghamshire        /pat-testing-buckinghamshire.html       200
+/pat-testing-cambridge              /pat-testing-cambridge.html             200
+/pat-testing-cambridgeshire         /pat-testing-cambridgeshire.html        200
+/pat-testing-hertfordshire          /pat-testing-hertfordshire.html         200
+/pat-testing-luton                  /pat-testing-luton.html                 200
+/pat-testing-milton-keynes          /pat-testing-milton-keynes.html         200
+/pat-testing-st-albans              /pat-testing-st-albans.html             200
+/pat-testing-stevenage              /pat-testing-stevenage.html             200
+/retrofit-assessment-bedford        /retrofit-assessment-bedford.html       200
 
-# ---- 5. Specialist pages -----------------------------------
-/retrofit-assessment-bedford.html   /retrofit-assessment-bedford   301!
-/commercial-epc-bedford.html        /commercial-epc-bedford        301!
-/commercial-epc-milton-keynes.html  /commercial-epc-milton-keynes  301!
-/hmo-compliance-bedford.html        /hmo-compliance-bedford        301!
-/epc-compliance-bundle.html         /epc-compliance-bundle         301!
-/for-estate-agents.html             /for-estate-agents             301!
+# ---- E. Blog: clean serves content; .html redirects to clean
+/blog/:slug.html                    /blog/:slug                               301!
+/blog/:slug                         /blog/:slug.html                          200
 
-# ---- 6. Homepage variants ----------------------------------
-/index.html                     /                       301!
-/home.html                      /                       301!
-
-# ---- 7. Catch-all safety net -------------------------------
-# Strips ".html" from ANY remaining root-level page so nothing
-# is left 404-ing. Place LAST so the explicit rules above win.
-/:slug.html                     /:slug                  301!
+# ---- F. Catch-all: any remaining root .html -> clean (LAST) 
+/:slug.html                         /:slug                                    301!

@@ -1,60 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Sitemap for checkepcrating.uk
-  Lists ONLY live, clean (extension-less) URLs.
-  Do NOT add any ".html" URLs here - those now 301-redirect.
-  Update <lastmod> when you change a page.
--->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Homepage -->
-  <url>
-    <loc>https://checkepcrating.uk/</loc>
-    <lastmod>2026-06-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-  <!-- EPC area pages -->
-  <url><loc>https://checkepcrating.uk/epc-bedford</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-milton-keynes</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-luton</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-cambridge</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-cambridgeshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-buckinghamshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-aylesbury</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-hertfordshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-st-albans</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-stevenage</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-
-  <!-- PAT testing pages -->
-  <url><loc>https://checkepcrating.uk/pat-testing-milton-keynes</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-luton</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-cambridge</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-hertfordshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-st-albans</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-stevenage</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-cambridgeshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-buckinghamshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/pat-testing-aylesbury</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-  <!-- Fire door inspection pages -->
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-milton-keynes</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-luton</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-cambridge</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-hertfordshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-st-albans</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-stevenage</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-cambridgeshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-buckinghamshire</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/fire-door-inspection-aylesbury</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-  <!-- Specialist pages -->
-  <url><loc>https://checkepcrating.uk/retrofit-assessment-bedford</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/commercial-epc-bedford</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/commercial-epc-milton-keynes</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/hmo-compliance-bedford</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/epc-compliance-bundle</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://checkepcrating.uk/for-estate-agents</loc><lastmod>2026-06-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url><loc>https://checkepcrating.uk/</loc><lastmod>2026-04-19</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-bedford</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-buckinghamshire</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-milton-keynes</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-luton</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-cambridge</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-cambridgeshire</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-aylesbury</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-st-albans</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-stevenage</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-hertfordshire</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/for-estate-agents</loc><lastmod>2026-06-06</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/retrofit-assessment-bedford</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/hmo-compliance-bedford</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/epc-compliance-bundle</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/commercial-epc-bedford</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/commercial-epc-milton-keynes</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-milton-keynes</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-luton</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-cambridge</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-hertfordshire</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-st-albans</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-stevenage</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-cambridgeshire</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-buckinghamshire</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/pat-testing-aylesbury</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-milton-keynes</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-luton</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-cambridge</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-hertfordshire</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-st-albans</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-stevenage</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-cambridgeshire</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-buckinghamshire</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/fire-door-inspection-aylesbury</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/commercial-vs-domestic-epc</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/common-fire-door-defects</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/common-pat-testing-failures</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/diy-pat-testing-vs-professional</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-and-property-value</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-and-renters-rights-bill</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-assessment-what-happens</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-cost-what-to-expect</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-exemptions-when-you-dont-need-one</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-for-property-managers</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-ratings-explained-a-to-g</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/epc-when-selling-property</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-door-inspection-cost</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-door-inspections-commercial-buildings</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-door-inspections-hmos-landlords</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-door-inspections-what-law-requires</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-door-maintenance-guide</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-door-ratings-fd30-fd60</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/fire-safety-act-2021-compliance</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/how-often-fire-doors-inspected</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/how-often-pat-testing</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/how-to-check-your-epc-is-valid</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/how-to-improve-epc-rating-d-to-c</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/landlords-epc-requirements-before-letting</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/minimum-energy-efficiency-standards-mees</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/new-build-sap-calculations-explained</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/pat-testing-certificates</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/pat-testing-cost</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/pat-testing-hmos</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/pat-testing-legal-requirements-landlords</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/pat-testing-offices-commercial</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/pat-testing-vs-fixed-wire-testing</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/retrofit-assessor-guide</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/tenants-guide-to-epc-ratings</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/what-happens-fire-door-inspection</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.65</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/what-is-an-epc-and-why-do-you-need-one</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://checkepcrating.uk/blog/what-is-pat-testing</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://checkepcrating.uk/pat-testing-bedford</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://checkepcrating.uk/fire-door-inspection-bedford</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

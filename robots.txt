@@ -1,11 +1,62 @@
-# robots.txt for https://checkepcrating.uk
-# Allow all search engines to crawl everything, and tell them
-# where the sitemap lives so new/clean URLs are discovered fast.
+# robots.txt for checkepcrating.uk
+# Last updated: 19 April 2026
 
+# Default: all well-behaved crawlers allowed
 User-agent: *
 Allow: /
 
-# (Optional) block nothing important. If you ever add admin or
-# thank-you pages you don't want indexed, add Disallow lines here.
+# Explicit allow for major AI / Generative Engine crawlers (GEO)
+# These control whether AI chatbots and answer engines can use and cite the site.
+User-agent: GPTBot
+Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Sitemap (canonical domain)
 Sitemap: https://checkepcrating.uk/sitemap.xml

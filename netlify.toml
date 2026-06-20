@@ -1,52 +1,56 @@
-# ============================================================
-#  netlify.toml  —  checkepcrating.uk
-#  Headers + crawl-friendly settings.
-#  (The 301 redirects live in the separate _redirects file.)
-# ============================================================
+# netlify.toml — performance, caching & security for checkepcrating.uk
+# WHERE THIS GOES: save this file in the TOP-LEVEL folder of your website
+# project (the same folder Netlify builds from), then push/deploy as normal.
+# Netlify reads it automatically. No other setup needed.
 
 [build]
-  # Files are served from the repo root. If your build outputs
-  # to a folder (e.g. "dist" or "public"), set it here instead.
+  # If your site is plain HTML files in the root, leave this as ".".
+  # If it builds into a folder (e.g. dist / public / build), change "." to that.
   publish = "."
 
-# Pretty URLs: serve /epc-bedford for epc-bedford.html and
-# auto-redirect the .html version. Belt-and-braces with _redirects.
-[build.processing]
-  skip_processing = false
-[build.processing.html]
-  pretty_urls = true
+# ---------------------------------------------------------------------------
+# CACHING: tells browsers to keep static files for a while, so repeat visits
+# (and Google's crawler) load faster. Values are conservative & safe — your
+# changes still appear within a week, and HTML always updates immediately.
+# ---------------------------------------------------------------------------
 
-# ---- Security + SEO-friendly response headers --------------
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "geolocation=(self)"
-
-# Long cache for static assets (images, css, js, fonts)
+# Images cached for 1 week
 [[headers]]
   for = "/*.webp"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# CSS & JS cached for 1 week
 [[headers]]
   for = "/*.css"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=604800"
 [[headers]]
   for = "/*.js"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=604800"
 
-# Always serve sitemap/robots as fresh
+# ---------------------------------------------------------------------------
+# SECURITY HEADERS + always-fresh HTML.
+# These are good-practice signals and don't change how your site looks.
+# ---------------------------------------------------------------------------
 [[headers]]
-  for = "/sitemap.xml"
+  for = "/*"
   [headers.values]
-    Cache-Control = "public, max-age=3600"
-    Content-Type = "application/xml; charset=utf-8"
-[[headers]]
-  for = "/robots.txt"
-  [headers.values]
-    Cache-Control = "public, max-age=3600"
-    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
